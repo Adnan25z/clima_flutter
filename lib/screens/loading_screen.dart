@@ -8,6 +8,11 @@ class LoadingScreen extends StatefulWidget {
 
 class _LoadingScreenState extends State<LoadingScreen> {
 
+  void initState() {
+    super.initState();
+    getLocation();
+  }
+
   void getLocation() async {
     LocationPermission permission;
 
@@ -37,19 +42,10 @@ class _LoadingScreenState extends State<LoadingScreen> {
       locationSettings: settings,
     );
 
-    print('Latitude: ${position.latitude}, Longitude: ${position.longitude}');
+    print(position);
   }
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            getLocation();
-          },
-          child: Text('Get Location'),
-        ),
-      ),
-    );
+    return Scaffold();
   }
 }
