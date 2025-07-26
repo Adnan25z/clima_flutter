@@ -8,6 +8,8 @@ environment:
   sdk: ^3.8.1
 
 dependencies:
+  geolocator: ^14.0.2
+
   flutter:
     sdk: flutter
 
