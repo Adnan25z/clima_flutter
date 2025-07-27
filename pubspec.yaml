@@ -9,7 +9,7 @@ environment:
 
 dependencies:
   geolocator: ^14.0.2
-
+  http: ^1.4.0
   flutter:
     sdk: flutter
 
